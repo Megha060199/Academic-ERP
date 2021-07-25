@@ -1,0 +1,52 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2021-06-24 13:03:47.283911",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "timetable_for",
+   "fieldtype": "Link",
+   "label": "timetable_for",
+   "mandatory": 1,
+   "options": "Student Batch",
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "from_date",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "to_date",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{}",
+ "modified": "2021-07-25 16:35:55.918186",
+ "modified_by": "Administrator",
+ "module": "acad",
+ "name": "Generate TimeTable",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "Select\ns.course as subject,s.instructor,s.schedule_date,s.from_time,s.to_time\nfrom \n`tabSchedule Subject Lecture` as s\nwhere\ns.student_group = %(timetable_for)s\nAND \ns.schedule_date BETWEEN %(from_date)s AND %(to_date)s",
+ "ref_doctype": "Schedule Subject Lecture",
+ "report_name": "Generate TimeTable",
+ "report_script": "frappe.query_reports[\"Generate Timetable\"] = {\n\t\"filters\": [\n\t\t{\n\t\t\tlabel: 'Student Group',\n\t\t\tfieldname: 'timetable_for',\n\t\t\tfieldtype: 'Link',\n\t\t\toptions: 'Sales Person',\n\t\t},\n\t\t{\n\t\t\tlabel: 'From Date',\n\t\t\tfieldname: 'from_date',\n\t\t\tfieldtype: 'Date',\n\t\t},\n\t\t{\n\t\t\tlabel: 'To Date',\n\t\t\tfieldname: 'to_date',\n\t\t\tfieldtype: 'Date',\n\t\t}\n\t],\n\t\"description\": \"This report gives the timetable of the student group mentioned in filters for the time intreval which is again given by the filters\",\n}",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "Academics User"
+  }
+ ]
+}
