@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{academic_year}-{term_name}",
+ "creation": "2015-09-08 17:19:19.158228",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "academic_year",
+  "term_name",
+  "term_start_date",
+  "term_end_date",
+  "title"
+ ],
+ "fields": [
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "term_name",
+   "fieldtype": "Select",
+   "label": "Term Name",
+   "options": "Semester 1\nSemester 2\nSemester 3\nSemester 4\nSemester 5\nSemester 6\nSemester 7\nSemester 8",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "term_start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Term Start Date",
+   "search_index": 1
+  },
+  {
+   "fieldname": "term_end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Term End Date",
+   "search_index": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title",
+   "read_only": 1,
+   "unique": 1
+  }
+ ],
+ "links": [],
+ "modified": "2021-07-25 11:45:26.099849",
+ "modified_by": "Administrator",
+ "module": "acad",
+ "name": "Academic Term",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Academics User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "restrict_to_domain": "Education",
+ "sort_field": "name",
+ "sort_order": "DESC",
+ "title_field": "title"
+}

@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:instructor_name",
+ "creation": "2015-11-04 15:56:30.004034",
+ "doctype": "DocType",
+ "document_type": "Other",
+ "engine": "InnoDB",
+ "field_order": [
+  "instructor_name",
+  "designation",
+  "employee",
+  "gender",
+  "column_break_5",
+  "status",
+  "department",
+  "image",
+  "personal_details_section",
+  "email_id",
+  "mobile_number",
+  "log_details",
+  "instructor_log"
+ ],
+ "fields": [
+  {
+   "fieldname": "instructor_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "Instructor Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Select",
+   "label": "Designation",
+   "options": "Visiting Faculty\nFaculty\nHOD"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.gender",
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Gender",
+   "options": "Gender",
+   "read_only_depends_on": "employee"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Active\nLeft",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Department",
+   "options": "Stream"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
+  },
+  {
+   "fieldname": "personal_details_section",
+   "fieldtype": "Section Break",
+   "label": "Personal Details"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "log_details",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Instructor Log"
+  },
+  {
+   "fieldname": "instructor_log",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Instructor Log",
+   "options": "Instructor Log"
+  }
+ ],
+ "image_field": "image",
+ "links": [],
+ "modified": "2021-07-25 11:41:10.197087",
+ "modified_by": "Administrator",
+ "module": "acad",
+ "name": "Instructor",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor"
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Education Manager",
+   "set_user_permissions": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Academics User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "restrict_to_domain": "Education",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "instructor_name"
+}

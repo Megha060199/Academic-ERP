@@ -1,0 +1,179 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "creation": "2015-09-23 15:37:38.108475",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "student_group",
+  "course",
+  "column_break_3",
+  "academic_year",
+  "academic_term",
+  "section_break_6",
+  "instructor",
+  "instructor_name",
+  "column_break_9",
+  "room",
+  "section_break_7",
+  "from_time",
+  "to_time",
+  "from_date",
+  "to_date",
+  "repeats_every",
+  "reschedule",
+  "column_break_15",
+  "course_end_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student Group",
+   "options": "Student Batch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "course",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Subject",
+   "options": "Subject",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Academic Year",
+   "options": "Academic Year",
+   "read_only": 1
+  },
+  {
+   "fieldname": "academic_term",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Academic Term",
+   "options": "Academic Term",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "instructor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Instructor",
+   "options": "Instructor",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "instructor.instructor_name",
+   "fieldname": "instructor_name",
+   "fieldtype": "Read Only",
+   "label": "Instructor Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "room",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Room",
+   "options": "Room"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "from_time",
+   "fieldtype": "Time",
+   "label": "From Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_time",
+   "fieldtype": "Time",
+   "label": "To TIme",
+   "reqd": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "repeats_every",
+   "fieldtype": "Select",
+   "label": "Repeats Every",
+   "options": "Monday,Wednesday,Friday\nTuesday,Thursday,Saturday\nEveryday\nMonday\nTuesday\nWednesday\nThursday\nFriday",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "reschedule",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Reschedule"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "course_end_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Course End Date"
+  }
+ ],
+ "hide_toolbar": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2021-07-25 11:40:30.692142",
+ "modified_by": "Administrator",
+ "module": "acad",
+ "name": "Lecture Scheduling Tool",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "role": "Academics User",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "restrict_to_domain": "Education",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,299 @@
+{
+ "actions": [],
+ "autoname": "field:title",
+ "creation": "2021-06-10 16:45:06.910259",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "column_break_5",
+  "mothers_name",
+  "fathers_name",
+  "personal_details_section",
+  "date_of_birth",
+  "gender",
+  "mobile_number",
+  "email_id",
+  "column_break_column",
+  "address_line_1",
+  "address_line_2",
+  "city",
+  "state",
+  "pincode",
+  "student_program_details_section",
+  "date_of_joining",
+  "enrolled_course",
+  "campus",
+  "current_academic_term",
+  "status",
+  "enrollment_number",
+  "roll_number",
+  "documents_section",
+  "aadhaar_number",
+  "aadhar_card",
+  "10th_markshet",
+  "12th_marksheet",
+  "graduation_certificate",
+  "leaving_certificate"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Title",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Middle Name",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mothers_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mother's Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fathers_name",
+   "fieldtype": "Data",
+   "label": "Father's Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "personal_details_section",
+   "fieldtype": "Section Break",
+   "label": "Personal Details"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number",
+   "length": 10,
+   "reqd": 1
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_column",
+   "fieldtype": "Column Break",
+   "label": "Residence "
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "Pincode",
+   "length": 6,
+   "reqd": 1
+  },
+  {
+   "fieldname": "student_program_details_section",
+   "fieldtype": "Section Break",
+   "label": "Student Program Details"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date Of joining"
+  },
+  {
+   "fieldname": "enrolled_course",
+   "fieldtype": "Link",
+   "label": "Enrolled Course",
+   "options": "Program Stream",
+   "reqd": 1
+  },
+  {
+   "fieldname": "campus",
+   "fieldtype": "Select",
+   "label": "Campus",
+   "options": "Deccan\nKothrud",
+   "reqd": 1
+  },
+  {
+   "fieldname": "current_academic_term",
+   "fieldtype": "Link",
+   "label": "Current Academic Term",
+   "options": "Academic Term",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nDropout\nExamined\nCertified",
+   "reqd": 1
+  },
+  {
+   "fieldname": "enrollment_number",
+   "fieldtype": "Data",
+   "label": "Enrollment Number"
+  },
+  {
+   "fieldname": "roll_number",
+   "fieldtype": "Data",
+   "label": "Roll Number"
+  },
+  {
+   "fieldname": "documents_section",
+   "fieldtype": "Section Break",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "aadhaar_number",
+   "fieldtype": "Data",
+   "label": "Aadhar Number",
+   "length": 12
+  },
+  {
+   "fieldname": "aadhar_card",
+   "fieldtype": "Attach",
+   "label": "Aadhar Card"
+  },
+  {
+   "fieldname": "10th_markshet",
+   "fieldtype": "Attach",
+   "label": "10th Markshet"
+  },
+  {
+   "fieldname": "12th_marksheet",
+   "fieldtype": "Attach",
+   "label": "12th Marksheet"
+  },
+  {
+   "fieldname": "graduation_certificate",
+   "fieldtype": "Attach",
+   "label": "Graduation Certificate"
+  },
+  {
+   "fieldname": "leaving_certificate",
+   "fieldtype": "Attach",
+   "label": "Leaving Certificate"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-07-25 11:42:45.014946",
+ "modified_by": "Administrator",
+ "module": "acad",
+ "name": "Enroll Student",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Academics User",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

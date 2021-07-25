@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "autoname": "format:{program_and_stream} Semester {semester}",
+ "creation": "2021-06-10 21:01:42.879821",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "program_and_stream",
+  "semester",
+  "subjects"
+ ],
+ "fields": [
+  {
+   "fieldname": "program_and_stream",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Program And Stream",
+   "options": "Program Stream",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "semester",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Semester",
+   "options": "1\n2\n3\n4\n5\n6\n7\n8",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "subjects",
+   "fieldtype": "Table",
+   "label": "Subjects",
+   "options": "subjects",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-07-25 11:37:32.786942",
+ "modified_by": "Administrator",
+ "module": "acad",
+ "name": "Program Stream Semester Wise Syllabus",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Academics User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
