@@ -3,10 +3,10 @@ from frappe import _
 def get_data():
 	return [
 		{
-			"module_name": "Academics",
+			"module_name": "acad",
 			"color": "grey",
 			"icon": "octicon octicon-file-directory",
 			"type": "module",
-			"label": _("Academics")
+			"label": _("acad")
 		}
 	]
