@@ -5,4 +5,5 @@
 from frappe.model.document import Document
 
 class ProgramStream(Document):
-	pass
+	def before_save(self):
+		self.program_stream_name = f"{self.program} {self.stream}"

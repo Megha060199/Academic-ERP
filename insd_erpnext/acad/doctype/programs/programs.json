@@ -1,5 +1,4 @@
 {
- "actions": [],
  "autoname": "field:program_abbreviation",
  "creation": "2021-06-10 14:38:14.643243",
  "doctype": "DocType",
@@ -35,9 +34,7 @@
    "read_only": 1
   }
  ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2021-07-25 11:27:49.268962",
+ "modified": "2021-08-03 11:56:45.640884",
  "modified_by": "Administrator",
  "module": "acad",
  "name": "Programs",

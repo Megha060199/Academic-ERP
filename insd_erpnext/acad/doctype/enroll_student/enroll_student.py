@@ -5,4 +5,5 @@
 from frappe.model.document import Document
 
 class EnrollStudent(Document):
-	pass
+	def before_naming(self):
+		self.title = f"{self.first_name} {self.middle_name} {self.last_name}"
