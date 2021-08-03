@@ -1,5 +1,4 @@
 {
- "actions": [],
  "autoname": "format:{subject_code} {subject_name}",
  "creation": "2021-06-12 21:57:39.108671",
  "doctype": "DocType",
@@ -13,7 +12,9 @@
   {
    "fieldname": "subject_code",
    "fieldtype": "Data",
-   "label": "Subject Code"
+   "label": "Subject Code",
+   "read_only": 1,
+   "set_only_once": 1
   },
   {
    "fieldname": "subject_name",
@@ -21,9 +22,7 @@
    "label": "Subject Name"
   }
  ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2021-07-25 11:41:49.439522",
+ "modified": "2021-08-03 13:50:11.393427",
  "modified_by": "Administrator",
  "module": "acad",
  "name": "Subject",

@@ -1,22 +1,24 @@
 {
- "actions": [],
  "allow_import": 1,
- "autoname": "field:academic_year_name",
+ "autoname": "format:{academic_year_name} {intake}-intake",
  "creation": "2015-09-07 12:49:51.303026",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "academic_year_name",
+  "intake",
   "year_start_date",
   "year_end_date"
  ],
  "fields": [
   {
    "fieldname": "academic_year_name",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Academic Year Name",
+   "options": "2021-2022\n2022-2023\n2023-2024",
+   "read_only": 1,
    "reqd": 1,
-   "unique": 1
+   "set_only_once": 1
   },
   {
    "fieldname": "year_start_date",
@@ -29,10 +31,18 @@
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "Year End Date"
+  },
+  {
+   "fieldname": "intake",
+   "fieldtype": "Select",
+   "label": "Intake",
+   "options": "January\nJune",
+   "read_only": 1,
+   "reqd": 1,
+   "set_only_once": 1
   }
  ],
- "links": [],
- "modified": "2021-07-25 11:45:07.047885",
+ "modified": "2021-08-03 12:37:10.942592",
  "modified_by": "Administrator",
  "module": "acad",
  "name": "Academic Year",

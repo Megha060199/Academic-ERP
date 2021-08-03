@@ -1,5 +1,4 @@
 {
- "actions": [],
  "autoname": "format:{program} {stream}",
  "creation": "2021-06-10 15:47:17.735396",
  "doctype": "DocType",
@@ -28,12 +27,12 @@
   {
    "fieldname": "program_stream_name",
    "fieldtype": "Data",
-   "label": "Program Stream Name"
+   "hidden": 1,
+   "label": "Program Stream Name",
+   "read_only": 1
   }
  ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2021-07-25 12:35:48.093595",
+ "modified": "2021-08-03 12:22:17.877666",
  "modified_by": "Administrator",
  "module": "acad",
  "name": "Program Stream",
