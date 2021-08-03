@@ -12,11 +12,8 @@ class ProgramStreamSemesterWiseSyllabus(Document):
 		where parent != %(selfname)s""",{
 			'selfname':self.name
 		},as_dict=True)
-		print(subject_data)
 		for sub in self.subjects:
 			if sub.subject in ([present_sub.subject for present_sub in subject_data]):
 				frappe.throw(f"{sub.subject} already present in syllabus of another program/stream/semester")
-			if sub.subject in self.subjects:
-				frappe.throw('Subject Already present in this syllabus')
 
 
