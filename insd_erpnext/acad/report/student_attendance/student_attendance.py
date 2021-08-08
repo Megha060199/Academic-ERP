@@ -104,5 +104,6 @@ def get_attended_lects(fromdate,todate,student):
         AND
         st.status = 'Present'
 		AND ssll.schedule_date BETWEEN %(fromdate)s AND %(todate)s
+        AND st.docstatus = 1
         GROUP BY indsub.subject_name""",{"fromdate":fromdate,"todate":todate,"student":student},as_dict=True)
 	return attended_lect
