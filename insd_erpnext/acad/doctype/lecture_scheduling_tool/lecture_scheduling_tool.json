@@ -1,5 +1,4 @@
 {
- "actions": [],
  "allow_copy": 1,
  "creation": "2015-09-23 15:37:38.108475",
  "doctype": "DocType",
@@ -148,8 +147,7 @@
  ],
  "hide_toolbar": 1,
  "issingle": 1,
- "links": [],
- "modified": "2021-07-25 11:40:30.692142",
+ "modified": "2021-08-09 11:02:30.071104",
  "modified_by": "Administrator",
  "module": "acad",
  "name": "Lecture Scheduling Tool",
@@ -170,6 +168,30 @@
    "role": "Administrator",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "admin",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Instructor",
+   "share": 1
   }
  ],
  "restrict_to_domain": "Education",
