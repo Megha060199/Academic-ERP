@@ -32,7 +32,7 @@
    "read_only": 1
   }
  ],
- "modified": "2021-08-03 12:22:17.877666",
+ "modified": "2021-08-09 10:50:30.824630",
  "modified_by": "Administrator",
  "module": "acad",
  "name": "Program Stream",
@@ -70,6 +70,26 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "admin",
    "share": 1,
    "write": 1
   }

@@ -1,5 +1,4 @@
 {
- "actions": [],
  "allow_copy": 1,
  "creation": "2016-11-16 17:12:46.437539",
  "doctype": "DocType",
@@ -85,8 +84,7 @@
  ],
  "hide_toolbar": 1,
  "issingle": 1,
- "links": [],
- "modified": "2021-07-25 11:45:51.168569",
+ "modified": "2021-08-09 10:57:12.135553",
  "modified_by": "Administrator",
  "module": "acad",
  "name": "Student Attendance Tool",
@@ -111,6 +109,23 @@
    "print": 1,
    "read": 1,
    "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "admin",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
    "share": 1,
    "write": 1
   }

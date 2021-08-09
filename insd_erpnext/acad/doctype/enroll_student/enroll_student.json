@@ -1,5 +1,4 @@
 {
- "actions": [],
  "autoname": "field:title",
  "creation": "2021-06-10 16:45:06.910259",
  "doctype": "DocType",
@@ -243,9 +242,7 @@
    "label": "Leaving Certificate"
   }
  ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2021-07-25 11:42:45.014946",
+ "modified": "2021-08-09 10:59:10.794690",
  "modified_by": "Administrator",
  "module": "acad",
  "name": "Enroll Student",
@@ -253,6 +250,7 @@
  "permissions": [
   {
    "create": 1,
+   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
@@ -289,6 +287,17 @@
    "read": 1,
    "report": 1,
    "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "admin",
    "share": 1,
    "write": 1
   }
