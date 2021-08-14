@@ -16,7 +16,6 @@
    "fieldtype": "Select",
    "label": "Academic Year Name",
    "options": "2021-2022\n2022-2023\n2023-2024",
-   "read_only": 1,
    "reqd": 1,
    "set_only_once": 1
   },
@@ -37,12 +36,11 @@
    "fieldtype": "Select",
    "label": "Intake",
    "options": "January\nJune",
-   "read_only": 1,
    "reqd": 1,
    "set_only_once": 1
   }
  ],
- "modified": "2021-08-09 10:50:58.602800",
+ "modified": "2021-08-14 10:45:22.963686",
  "modified_by": "Administrator",
  "module": "acad",
  "name": "Academic Year",
