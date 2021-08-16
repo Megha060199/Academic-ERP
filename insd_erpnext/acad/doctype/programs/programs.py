@@ -23,6 +23,9 @@ class Programs(Document):
 		
 		if self.program_name == 'Certificate':
 			self.program_abbreviation = 'Certificate'
+
+		if self.program_name == 'Master of Business Administration':
+			self.program_abbreviation = 'MBA'
 		
 	def before_save(self):
 		if self.program_name == 'Bachelor Of Design':
@@ -37,3 +40,5 @@ class Programs(Document):
 			self.number_of_semesters = 2
 		if self.program_name == 'Certificate':
 			self.number_of_semesters = 1
+		if self.program_name == 'Master of Business Administration':
+			self.number_of_semesters = 4
