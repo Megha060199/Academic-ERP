@@ -54,7 +54,7 @@ class LectureSchedulingTool(Document):
 						if lecture:
 							lecture.save()
 							frappe.db.commit()
-							frappe.msgprint(f'Lecture Created for date {date}')
+										
 				except OverlapError:
 						frappe.throw('Cannot Create Lecture')
 			start_date += delta
@@ -103,7 +103,7 @@ class LectureSchedulingTool(Document):
 		return lecture
 
 
-
+	
 	def validate_mandatory(self):
 		"""Validates all mandatory fields"""
 
