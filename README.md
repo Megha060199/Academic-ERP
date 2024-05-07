@@ -11,8 +11,11 @@ Application to manage admin work of an academic institution. This is an erp that
 - Individual Profiles for users
       - Faculty Profiles
       - Admin Profile  
-      - Director Profile 
-      - Every profile  has specific role permissions
+      - Director Profile
+- Every profile  has specific role permissions
+
+## Technology Stack
+      Python, MySQL, Javascript 
 
 #### License
 
